@@ -114,7 +114,7 @@ snippet section
 snippet page
 	${1:page}~\pageref{${2}}${3}
 snippet start
-	\documentclass[a4paper, fleqn, 12pt, oneside, pdftex]{scrreprt}
+	documentclass[a4paper, fleqn, 12pt, oneside, pdftex]{scrreprt}
 	\usepackage[utf8]{inputenc}
 	\usepackage[german]{babel}
 	\usepackage{ulem}
@@ -122,21 +122,21 @@ snippet start
 	\usepackage{amsfonts}
 	\usepackage{amssymb}
 	\usepackage{graphicx}
-	\usepackage{mdframed}
 	\usepackage{tikz}
+	\usepackage[framemethod=TikZ]{mdframed}
 
 	\setlength{\parindent}{0pt}  %\noindent in the whole document
 
 	% frame style ----------------------------------------------
-	\mdfdefinestyle{MyFrame}{%
+	\global\mdfdefinestyle{frameRoundGrey}{%
 		linecolor=black,
-		outerlinewidth=5pt,
-		roundcorner=20pt,
+		outerlinewidth=1pt,
+		roundcorner=10pt,
 		innertopmargin=\baselineskip,
 		innerbottommargin=\baselineskip,
 		innerrightmargin=20pt,
 		innerleftmargin=20pt,
-		backgroundcolor=gray!10!white}
+		backgroundcolor=gray!40!white}
 
 	% --------------------- Punkte Command ---------------------
 
@@ -193,7 +193,7 @@ snippet start
 	{
 		\frac{\partial{#1}}{\partial{#2}}
 	}
-	
+
 	% make matrix
 	\newcommand{\bpm}{\begin{pmatrix}}
 	\newcommand{\epm}{\end{pmatrix}}
