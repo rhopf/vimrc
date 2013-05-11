@@ -1,10 +1,8 @@
+set lines=55 columns=110
 set guioptions-=T  "remove toolbar
 syntax on
 
-
 call pathogen#infect()
-
-set shell=bash
 
 " Sets how many lines of history VIM has to remember
 set history=100
@@ -163,3 +161,9 @@ nnoremap <leader>vs :vsp<Cr>
 " latex setting
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor='latex'
+let g:Tex_DefaultTargetFormat='pdf'
+
+" macvim specific stuff
+if has("gui_macvim")
+    tfufufz" set macvim specific stuff
+endif
