@@ -165,5 +165,5 @@ let g:Tex_DefaultTargetFormat='pdf'
 
 " macvim specific stuff
 if has("gui_macvim")
-    tfufufz" set macvim specific stuff
+    set guifont=Andale\ Mono:h14
 endif
