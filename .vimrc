@@ -167,3 +167,4 @@ let g:Tex_DefaultTargetFormat='pdf'
 if has("gui_macvim")
     set guifont=Andale\ Mono:h14
 endif
+" just a comment :)
