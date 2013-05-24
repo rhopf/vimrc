@@ -170,3 +170,10 @@ endif
 
 nnoremap ä w
 nnoremap ö b
+nnoremap ü a
+nnoremap j gj
+nnoremap k gk
+
+" make empty lines
+map <S-Enter> O<Esc>
+map <Cr> o<Esc>
